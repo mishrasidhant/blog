@@ -1,6 +1,6 @@
 HUGO=hugo
 SUBMODULE_PUBLIC_DIR=public
-BASE_URL?="https://www.mishrasidhant.github.io"
+BASE_URL?="https://mishrasidhant.github.io/"
 GIT_CONFIG_GLOBAL := $(HOME)/.gitconfig
 
 default: localhost
@@ -29,14 +29,11 @@ get-submodule-sha:
 	$(eval SUBMODULE_SHA := $(shell cd $(SUBMODULE_PUBLIC_DIR) && git rev-parse HEAD))
 
 commit-main: get-submodule-sha
-	@git add . && git commit -m "$(m) \nSubmodule updated to $(SUBMODULE_SHA )" && git push origin main
+	@git add . && git commit -m "$(m) - Submodule:$(SUBMODULE_SHA)" && git push origin main
 
 publish: check-commit-message clean generate commit-submodule commit-main
-
 
 localhost: clean
 	$(HUGO) server
 
-
 .PHONY: localhost publish
-
