@@ -1,5 +1,5 @@
 baseurl = "https://mishrasidhant.github.io"
-title = "Sid's Blog"
+title = "The Terminal Tinkerer"
 theme = "hugo-coder"
 languagecode = "en"
 defaultcontentlanguage = "en"
@@ -49,7 +49,7 @@ style = "github-dark"
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
-  url = "https://github.com/mishrasidhant/"
+  url = "https://github.com/CExSDixit"
 [[params.social]]
   name = "Linkedin"
   icon = "fa-brands fa-linkedin fa-2x"
