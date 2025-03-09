@@ -12,17 +12,58 @@ series = []
 +++
 
 # Topics to cover
+- https://www.ssllabs.com/ : checking ssl cert grade
+- TLS w/h Cloudflare and GithubPages
+  - Explore cloudflare and the benefits it offers
+    - DNS in proxy mode
+      - DDOS attack
+      - ..
+  - Github pages feature to host custom domains
+    - CNAME record
+    - Redirect
+  - Cloudflare Registry for domain purchase
+  - Manage DNS in cloudflair free account
+    - 3 Rules
+      - Redirect HTTP to HTTPS
+      - Forward www to root
+      - What's a good 3rd free rule to setup?
+  - Configuring end to end TLS for custom domain w/h cloudflare DNS
+    - Snags during setup that were handled by adding and removing DNS entries
+    - CNAME for www -> root
+    - RULE for www -> root
+	- TXT record -> github requirement to verify domain
+	- Adding domain to github -> global settings
+	- Adding custom domain to repo -> Took some troubleshootin
+    	- Github does not like DNS entries when you have "proxy" enabled DNS A records on cloudflare
+        	- TODO: Revert your config and show the site being served at HTTP
+          	- Show the cloudflare SSL enforceement on the dashboard hitting insecure backend
+    	- Disable the proxy settings for all A records and CNAME redirect
+    	- Configure custom domain on github
+    	- Wait for some time for Github to recognize the updated DNS configuration
+		- HTTPS configured on backend
+  - Show configure TLS "full" on cloudflare now
+  - End to End TLS set up complete
+  - BONUS:
+    - Show how cloudflare DNS works by checking "dig" return values
+	- Show the cloudflare dashboard entries for traffic being encrypted
+  - So the above method did not work
+    - Everytime proxied DNS is enabled, github detects DNS change and provisions new certificates
+    - Try and bypass this by allowing 24 hours for HTTPS to be configured on github (get the green checkmark) and then switching DNS to proxied
+
 - SAML auth setup
   - Metadata
   - Implementation - application level
+
 - Makefile
   - Cover the syntax differences between "makefile" and "rules"
   - Show how you setup a submodule to be in sync w/h main repo
+
 - Jenkins Distributed architecture
   - Requirements : Build images w/h docker
   - Restrictions: No k8s available
   - Archetecture to autoscale
   - From containerized instances per reigion to single central distributed archetecture that autoscales
+
 - Jenkinsfile setup for chaining pipelines to deploy
   - How to use bash scripts with jenkins
   - Using the `script` escape hatch with declarative jenkinsfile syntax

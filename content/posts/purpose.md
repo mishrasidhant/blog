@@ -34,7 +34,7 @@ Welcome to my corner of the internet. My goal is to bring value to someone else'
 Success for me is defined by the encouragement and feedback I receive from you! Your thoughts,  questions, and insights will shape and improve this blog. Please feel free to reach out! 
 
 ## Contact me
-If any of my posts help you, or spark an idea, I'd love to hear about it!
+If any of my posts help you or spark an idea, I'd love to hear about it!
 
 [![Get in touch](https://img.shields.io/badge/Get_in_touch-brightgreen?style=for-the-badge)](mailto:mishrasidhant@gmail.com)
 [![Connect on Linkedin](https://img.shields.io/badge/Connect_on_Linkedin-blue?style=for-the-badge)](https://www.linkedin.com/in/sidhant-dixit-659970149)
