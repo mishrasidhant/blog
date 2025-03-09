@@ -1,6 +1,6 @@
 HUGO=hugo
 SUBMODULE_PUBLIC_DIR=public
-BASE_URL?="https://mishrasidhant.github.io/"
+BASE_URL?="https://terminaltinkerer.com/"
 GIT_CONFIG_GLOBAL := $(HOME)/.gitconfig
 
 default: localhost
