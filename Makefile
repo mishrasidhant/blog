@@ -1,5 +1,6 @@
 HUGO=hugo
 SUBMODULE_PUBLIC_DIR=public
+CNAME=terminaltinkerer.com
 BASE_URL?="https://terminaltinkerer.com/"
 GIT_CONFIG_GLOBAL := $(HOME)/.gitconfig
 
@@ -12,6 +13,7 @@ check-user:
 
 clean:
 	rm -rf $(SUBMODULE_PUBLIC_DIR)/*
+	echo $(CNAME) > $(SUBMODULE_PUBLIC_DIR)/CNAME
 
 generate:
 	$(HUGO) --gc --minify --baseURL $(BASE_URL)
