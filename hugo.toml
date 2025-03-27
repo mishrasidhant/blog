@@ -17,7 +17,7 @@ style = "github-dark"
 
 [params]
   author = "Sidhant Dixit"
-  info = "Backend/DevOps Developer | Terminal Tinkerer | Linux Fanboy"
+  info = "Backend/DevOps Developer | Linux Fanboy"
   description = "Personal website"
   keywords = "blog,developer,devops,personal,backend,systems"
   avatarurl = "images/toonface-avatar.jpg"
