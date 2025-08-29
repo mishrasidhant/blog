@@ -43,6 +43,7 @@ style = "github-dark"
     enabled = true
     key = "0dSDd40FVUq0jAVUuKd6BQ"
     scriptUrl = "https://analytics.ahrefs.com/analytics.js"
+    async = false
 
 [taxonomies]
   category = "categories"
