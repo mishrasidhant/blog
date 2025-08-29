@@ -38,6 +38,12 @@ style = "github-dark"
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 
+  # Ahrefs Analytics Configuration
+  [params.ahrefsAnalytics]
+    enabled = true
+    key = "0dSDd40FVUq0jAVUuKd6BQ"
+    scriptUrl = "https://analytics.ahrefs.com/analytics.js"
+
 [taxonomies]
   category = "categories"
   series = "series"

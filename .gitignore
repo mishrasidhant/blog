@@ -1,0 +1,37 @@
+# Hugo generated files
+resources/
+#public/ - this is a submodule and maintained separately
+.hugo_build.lock
+
+# Hugo cache
+.cache/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Node modules (if using any Node.js tools)
+node_modules/
+
+# Environment files
+.env
+.env.lolocal

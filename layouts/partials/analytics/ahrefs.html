@@ -1,0 +1,4 @@
+<!-- Ahrefs Analytics Script -->
+{{ if .Site.Params.ahrefsAnalytics.enabled }}
+<script src="{{ .Site.Params.ahrefsAnalytics.scriptUrl }}" data-key="{{ .Site.Params.ahrefsAnalytics.key }}" async></script>
+{{ end }}
